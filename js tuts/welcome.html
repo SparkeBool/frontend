@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        nav{
+            display:flex;
+            justify-content: space-between;
+            z-index: 2;
+        }
+
+        nav ul{
+            display: flex;
+            gap: 30px;
+        }
+        ul li{
+            list-style: none;
+        }
+
+        li a{
+            text-decoration: none;
+            color: green;
+        }
+        a:hover{
+            color:rgb(0, 0, 0);
+
+        }
+        .container{
+            width: auto;
+                        padding: 20px;
+          
+        }
+    </style>
+
+    <nav class="shadow">
+        <img width="70" src="image1.jpg" alt="">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="login.html">Logout</a></li>
+           
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1>Welcome!</h1>
+    <p>Your email is: <span id="emailDisplay"></span></p>
+    </main>
+
+    <script>
+       
+const queryString = window.location.search;
+
+const urlParams = new URLSearchParams(queryString);
+
+const email = urlParams.get("user");
+
+if (email) {
+    document.getElementById("emailDisplay").textContent = email;
+} 
+    </script>
+    
+</body>
+</html>

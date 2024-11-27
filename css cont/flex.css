@@ -1,0 +1,66 @@
+.parent{
+    /* height: 50vh; */
+    border:2px solid red;
+    padding: 1rem;
+    display:flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.child{
+    /* border:1px solid green; */
+    box-shadow: 1px -2px 2px 2px lightgray;
+    border-radius: 5px;
+    width: 200px;
+    height: 260px;
+    /* padding: 1rem; */
+}
+
+.child:hover{
+    background: linear-gradient(rgba(255, 0, 0, 0.507), rgba(0, 0, 255, 0.637), rgba(0, 128, 0, 0.384)), url("./image1.jpg");
+
+    background-size: cover;
+}
+
+.child-a{
+    align-self: flex-start;
+}
+
+.child-b{
+    align-self: center;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-list{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: 18px;
+    font-family: cursive;
+}
+
+.nav-list li:hover{
+cursor: pointer;
+color: purple;
+background-color: chocolate;
+/* font-weight: 600px; */
+}
+
+.button{
+    padding: 10px 22px;
+    color: white;
+    background-color: green;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+.fa-solid{
+    font-size: 15px;
+}

@@ -1,0 +1,56 @@
+.parent{
+    border:2px solid green;
+    padding: 1rem;
+    margin-bottom: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.child{
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+.translate{ 
+    /* traslateX or translateY */
+    transform: translate(100px, 300px);
+}
+
+.skew{
+transform: skew(-20deg, 30deg);
+background: url('image1.jpg');
+background-position: center;
+background-size: cover;
+}
+
+.scale{
+    /* transform: scaleX(2); */
+    background-color: brown;
+    transition: transform 1s, font-size 2s;
+}
+
+.scale:hover{
+transform: scale(2);
+background-color: purple;
+cursor: pointer;
+font-size: 40px;
+}
+
+.rotate{
+    /* transform: rotateX(50deg);
+    transform: rotateY(40deg);
+    transform: rotateZ(270deg); */
+    background-color: blueviolet;
+    color: white;
+    transition-property: transform;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+
+.rotate:hover{
+transform: rotate(270deg);
+font-size: 20px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .bg{
+            background: linear-gradient(rgba(231, 29, 29, 0.356),
+            black  ), url('image1.jpg');
+            width: 400px;
+            height:400px;
+            background-size:cover;
+            /* filter: blur(4px);
+             */
+
+             /* filter: brightness(50%);
+              */
+
+              /* filter: contrast(30%); */
+              /* filter: drop-shadow(4px 1px 3px red); */
+
+              /* filter: grayscale(50%);
+               */
+
+               /* filter: hue-rotate(300deg) ; */
+
+
+               /* filter: invert(); */
+               /* filter: opacity(60%); */
+               /* filter: saturate(5); */
+               /* filter: sepia(); */
+            position: relative;
+        }
+        
+        .h1{
+            color: white;
+            font-size: 60px;
+            position: absolute;
+            top: 70px;
+        }
+
+        .container{
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            background: url("freecode_camp/images/dubai-downtown-skyline-at-sunset-d800x600.avif");
+            background-position: center;
+            background-size: cover;
+            border: 1px solid;
+            /* clip-path: circle(); */
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+/* clip path generator - cssportal.com */
+
+        }
+
+    </style>
+    <h1>Clipart filter</h1>
+
+    <div class="bg">
+        
+    </div>
+    <h1 class="h1">Hello world</h1>
+
+    <div class="container">
+
+    </div>
+</body>
+</html>

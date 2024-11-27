@@ -1,0 +1,74 @@
+.container{
+    border: 2px solid red;
+    width: 500px;
+    height: 80vh;
+    margin: auto;
+}
+
+.content{
+    background-color: purple;
+    width: 70px;
+    height: 70px;
+    /* transition: width 2s, height 5s;
+     */
+     /* transition: all 2s ease-in-out;
+     animation-name: moveAround;
+     animation-duration:5s;
+     animation-iteration-count: infinite; */
+     animation: moveAround 4s linear 2s infinite alternate;
+    
+}
+
+.content:hover{
+    width: 440px;
+    height: 200px;
+   
+}
+
+/* @keyframes anime {
+    from  {
+        width: 70px;
+        height: 70px;
+    }
+    
+    to {
+        width:440px ;
+        height:200px;
+        background-color: chocolate;
+    }
+} */
+
+@keyframes moveAround {
+    0%{
+        background-color: blueviolet;
+    }
+
+    20%{
+        background-color: darkblue;
+        transform: translateX(370px)
+        rotate(270deg);
+    }
+    40%{
+        background-image: url('image1.jpg');
+        background-position: center;
+        background-size: cover;
+        background-color: rgb(52, 200, 215);
+        transform: translate(370px, 435px) scale(0.7);
+       ;
+    } 
+    60%{
+        background-color: green;
+        transform: translate(200px, 217.5px);
+    }
+    80%{
+        transform: translate(0px, 435px);
+
+    }
+    100%{
+        transform: rotate(240deg);
+        border-radius: 50%;
+        box-shadow: 2px 3px 2px 3px yellow;
+        background-color: crimson;
+
+    }
+}

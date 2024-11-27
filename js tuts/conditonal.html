@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Conditional Statement</h1>
+
+    
+
+    <div id="display"></div>
+
+    <button onclick="welcomeUsers()">CLick Me</button>
+
+    <script>
+
+        let userName = "Adeleke Oriyomi"
+        let time = new Date().getHours()
+
+
+      function  welcomeUsers(){
+        if(time < 12){
+            console.log('Good Morning')
+            // alert('Good Morning '+ userName ) 
+            document.getElementById('display').innerText = 'Good Morning ' + userName;
+        }if(time < 18){
+            console.log('Good Afternoon')
+            // alert('Good Afternoon '+ userName ) 
+            document.getElementById('display').innerHTML = ` <h1> Good Afternoon ${userName}`;
+            document.getElementById('display').style.color = 'blue';
+        }
+        else{
+            console.log('Good afternoon')
+        }
+    }
+        
+
+    let grade;
+
+    if(grade <= 39){
+        console.log('you failed')
+    }
+
+
+        console.log(userName)
+    </script> 
+    
+</body>
+</html>

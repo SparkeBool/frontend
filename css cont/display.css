@@ -1,0 +1,38 @@
+.big-text{
+    color:green;
+    border: 2px solid red;
+    display: inline;
+}
+
+.small-text{
+    color:purple;
+    border: 2px solid;
+    display: block;
+    font-size: 30px;
+}
+
+.paragraph{
+    border:2px solid orange;
+    display: inline-block;
+    padding: 10PX;
+}
+
+button{
+    padding:10px 22px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 50px;
+    background: green;
+    color: white;
+    font-size:20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+    /* display:none; */
+
+}
+
+button:hover{
+    background: black;
+    cursor: pointer;
+    /* color: yellow; */
+}

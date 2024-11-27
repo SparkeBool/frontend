@@ -1,0 +1,36 @@
+.parent{
+    margin-top: 100px;
+    margin-left: 300px;
+    width:300px ;
+    position:relative
+}
+
+.head{
+    border: 1px solid;
+    width: 200px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo-text{
+    color: black;
+    display: inline-block;
+    overflow: hidden;
+    font-family: "Linux Libertine", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+}
+
+.child{
+    /* position: absolute; */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.en{
+    left: 40px;
+    width: 200px;
+    position: absolute;
+    left:1px;
+    top:50px;
+    
+}
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+   <style>
+     .container{
+        width:250px;
+        margin: auto;
+        height: 290px;
+        border: 1px solid;
+        padding: 10px;
+        background-color: brown;
+    }
+    input{
+        width: 240px;
+        height: 40px;
+        display: block;
+        align-items: center;
+        font-size: 30px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+   
+    }
+
+    button{
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        padding: 5px;
+        background-color: black;
+        color: white;
+        border-bottom: 1px solid white;
+      
+        }
+
+        button:hover{
+            cursor: pointer;
+        }
+
+        .ce{
+            background-color: red;
+        }
+
+   .ans{
+    width: 250px;
+   }
+   </style>
+</head>
+<body>
+<div class="container">
+    <input type="text" id="display" placeholder="0" readonly>
+    <button id="btn" onclick="enterValue('1')">1</button>
+    <button id="btn" onclick="enterValue('2')">2</button>
+    <button id="btn" class="ce" onclick="reset()">CE</button>
+    <button id="btn" onclick="enterValue('3')">3</button>
+    <button id="btn" onclick="enterValue('4')">4</button>
+    <button id="btn" onclick="enterValue('+')">+</button>
+    <button id="btn" onclick="enterValue('5')">5</button>
+    <button id="btn" onclick="enterValue('6')">6</button>
+    <button id="btn" onclick="enterValue('-')">-</button>
+    <button id="btn" onclick="enterValue('7')">7</button>
+    <button id="btn" onclick="enterValue('8')">8</button>
+    <button id="btn" onclick="enterValue('*')">*</button>
+    <button id="btn" onclick="enterValue('9')">9</button>
+    <button id="btn"  onclick="enterValue('0')">0</button>
+   
+    <button id="btn" onclick="enterValue('/')">/</button>
+    <button id="btn" class="ans" onclick="solve()">=</button>
+</div>
+
+<script>
+function enterValue(value) {
+    document.getElementById('display').value += value;
+}
+
+function solve(){
+    let value = document.getElementById('display').value;
+
+    result = eval(value);
+
+    document.getElementById('display').value = result;
+
+}
+
+function reset(){
+    document.getElementById('display').value ="";
+}
+
+
+</script>
+    
+</body>
+</html>

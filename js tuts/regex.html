@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex</title>
+</head>
+<body>
+    <h1>Regular Expression</h1>
+
+<!-- regex101.com 
+ [abc]+/g     finds abc
+ [a-z]+/g         adds a-z
+ [^abc]+/g            excludes abc
+ [a-zA-Z]+/g           includes a-z or A-Z
+ [.]+                   any characters
+ [\d]+                   matches numbers
+ [\D]+                   matches any non numbers
+ [\w]+                   any word caracter
+ [\W]+                      exlcudes any word character
+ [a-z]{3}                     matches 3 characters maximum
+
+
+
+
+
+-->
+
+ 
+    <script>
+        let name = "Samuel"
+        let regex = /samuel/
+
+        // name.match(regex)
+
+        console.log(regex.test(name))
+    </script>
+</body>
+</html>

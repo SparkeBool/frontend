@@ -1,0 +1,73 @@
+.headingText{
+    color:purple;
+    text-align: center;
+    font-size: 50px;
+}
+.container{
+    border-width:3px;
+    border-style:solid;
+    margin: 30px;
+    padding-left: 40px;
+    height: 300px;
+}
+
+.parent{
+    border: 2px solid;
+    padding: 1rem;
+}
+.child{
+    height: 200px;
+    width: 200px;
+    /* border: 2px solid red; */
+    margin-bottom: 1rem;
+}
+.child-a{
+    border-style: dotted;
+   
+
+    /* background-color: purple; */
+}
+
+.take-this{
+    background-color: purple;
+    font-size: 40px;
+    color: white;
+}
+
+.child-b{
+    border: 5px dashed purple;
+}
+
+.child-c{
+    border: 10px double brown;
+}
+
+.welcome{
+    text-align:center;
+}
+
+.child-d{
+    border:10px groove orangered;
+}
+.child-e{
+    border: 12px ridge green;
+
+}
+.border{
+    border-top: 10px solid orange;
+    border-bottom: 10px groove green;
+    border-right:10px dotted purple;
+    border-bottom: 10px dashed blue;
+}
+
+.radius{
+    border: 3px solid green;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.circle{
+    border-radius: 50%;
+    border:2px solid brown;
+}

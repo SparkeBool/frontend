@@ -1,0 +1,113 @@
+.parent{
+    display: grid;
+    border: 1px solid red;
+    /* height: 40vh; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    /* gap: 20px; */
+    padding: 4rem;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.parent1{
+    display: grid;
+    border: 1px solid red;
+    /* height: 40vh; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    /* gap: 20px; */
+    padding: 4rem;
+    justify-content: space-around;
+}
+
+.child{
+    
+    border: 1px solid lightgray;
+}
+
+.child-a{
+    background-image: url('./images/dubai-downtown-skyline-at-sunset-d800x600.avif');
+    background-size: cover;
+    background-position: center;
+    grid-column: span 2;
+}
+.child-a1{
+    background-image: url('./images/dubai-downtown-skyline-at-sunset-d800x600.avif');
+    background-size: cover;
+    background-position: center;
+    /* grid-column: span 2; */
+}
+
+.child-a{
+    grid-row: span 2;
+}
+
+.child-b{
+    background-image: url('./images/business-class-meal-w800x600.avif');
+    /* background-position: center; */
+    background-position: center;
+    background-size: cover;
+
+}
+
+.child-c{
+    background-image: url('./images/first-class-dessert-w800x600.avif');
+    /* background-position: center; */
+    background-position: center;
+    background-size: cover;
+
+}
+
+.child-d{
+    background-image: url('./images/economy-class-chocolate-dessert-w800x600.avif');
+    /* background-position: center; */
+    background-position: center;
+    background-size: cover;
+
+}
+
+.child-e{
+    background-image: url('./images/business-class-meal-w800x600.avif');
+       /* background-position: center; */
+    background-position: center;
+    background-size: cover;
+
+}
+
+.parent2{
+    display: grid;
+    border: 1px solid red;
+    /* height: 40vh; */
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    grid-template-rows: repeat(4, 200px);
+    /* gap: 20px; */
+    padding: 4rem;
+    justify-content: space-around;
+    
+
+}
+
+.same1{
+    grid-column: span 2;
+}
+
+.same2{
+    grid-column: span 1.5;
+}
+
+.parent3{
+    display: grid;
+    border: 1px solid red;
+    /* height: 40vh; */
+    grid-template-columns: repeat(1, 1fr);
+    flex-wrap: wrap;
+    grid-template-rows: repeat(5, 250px);
+    /* gap: 20px; */
+    padding: 4rem;
+    justify-content: space-around;
+    
+
+}

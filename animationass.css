@@ -1,0 +1,52 @@
+.container{
+    /* border: 2px solid red;
+     */
+    background-color: blue;
+     width: 600px;
+    height: 80vh;
+    margin: auto;
+}
+
+.content{
+    width: 150px;
+    background-color: purple;
+    /* border: 1px solid lightcyan; */
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    animation: moveAround 25s linear 2s infinite alternate;
+    padding: 10px;
+    
+}
+
+
+@keyframes moveAround {
+    0%{
+        background-color: blueviolet;
+    }
+
+    20%{
+        /* background-color: darkblue; */
+        transform: translateX(370px);
+    }
+       
+    40%{
+       
+        transform: translate(370px, 435px);
+       
+    } 
+    60%{
+        /* background-color: green; */
+        transform: translate(200px, 217.5px);
+    }
+    80%{
+        transform: translate(0px, 350px);
+
+    }
+    100%{
+        transform: translate(0px, 400px);
+      
+        
+
+    }
+}

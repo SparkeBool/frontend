@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Nexted loop</h1>
+    <input type="number" id="startAt" placeholder="startAt">
+    <input type="number" id="endAt" placeholder="endAt">
+    <input type="number" id="tiles" placeholder="tiles">
+    <button>Submit</button>
+
+
+
+
+    <table>
+        <tr id="display-table"></tr>
+    </table>
+
+
+
+    <script>
+        function nestedLoop(){
+            let endAt = document.getElementById('endAt').value;
+            let startAt = document.getElementById('startAt').value;
+            let tiles = document.getElementById('tiles').value;
+
+            // console.log(endAt);
+
+            let display ="";
+
+            for (let i = startAt; i <= endAt; i++) {
+               display+= `<td> <table><tr><th> ${i} times table </th> </tr> </table>`;
+
+                for (let j = 0; j < tiles; j++) {
+                    display += `<tr> <td> ${i} x ${j} = ${i*j} </td> </tr>`
+
+                    
+                }
+                display += `</table> </td>`
+                
+            }
+
+            document.getElementById('display-table').innerHTML +=display;
+        }
+    </script>
+    
+</body>
+</html>

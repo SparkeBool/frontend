@@ -1,0 +1,41 @@
+.parent{
+    background: linear-gradient(rgba(204, 15, 15, 0.356),
+     rgb(69, 156, 11)), url('image1.jpg');
+    background-position: center;
+    background-size: cover;
+    border:2px solid green;
+    width: 70vw;
+    height: 120vh;
+    padding: 10px;
+}
+ .child{
+    color: rgb(248, 248, 248);
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid orange;
+    margin-bottom: 1rem;
+ }
+
+ .background{
+    background-color: #63e20fbb;
+ }
+  .linear{                           /*  to left, right, top and bottom,30deg*/
+    background: linear-gradient( 255deg, red 10%, green 50%, yellow)
+ }
+
+ .repeating-linear{
+    background: repeating-linear-gradient( 30deg, red, green 15%, yellow 20%);
+ }
+
+ .radial{
+    background: radial-gradient( red, green 30%, yellow);
+ }
+
+ .repeating-radial{
+    background-image: repeating-radial-gradient(green 10%, black 20%);
+ }
+ .image{
+    background-image: url('image1.jpg');
+    background-position: center;
+ }
